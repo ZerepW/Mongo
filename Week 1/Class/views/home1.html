@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MongoU - Week 1</title>
+    </head>
+    <body>
+        <h1>Bienvenido {{usuario}}</h1>
+        <ul>
+            %for fruta in frutas:
+            <li>{{fruta}}</li>
+            %end
+        </ul>
+        <form action="/frutafav" method="POST">
+            <h3>¿Cuál es tu fruta favorita?</h3>
+            <input type="text" name="fruta" size="40" value="" placeholder="Elige una fruta"><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
